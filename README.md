@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Early 2025 I set up *BunsenLabs Boron* on my **Thinkpad X1 Yoga Gen2**. I took
+Early 2025 I set up *BunsenLabs Boron* on my **Thinkpad X1 Yoga Gen 2**. I took
  many notes during my research and decided to reorganize and share them.
 
 This repository covers some additional information about the packages used by

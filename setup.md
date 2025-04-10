@@ -20,9 +20,8 @@ After new installation, the welcome script is automatically started. It can
 
 ### observations
 
-- fast boot time (*x* sec after grub selection)
 - almost instantly ready and idle
-- almost all thinkpad function keys are working
+- important thinkpad function keys are working
   - `F1` to `F3` correctly control audio (xfce audio applet **must** run)
   - `F4` mute does not work but LED works when mic is muted in audio applet
   - brightness control `F5` & `F6` work
@@ -33,7 +32,7 @@ After new installation, the welcome script is automatically started. It can
   - `F11` & `F12` do nothing
 - trackpoint, nav keys and touchpad generally work
   - multitouch gestures are missing
-  - natural scrool doesn't work
+  - natural scroll doesn't work
   - palm recognition doesn't work
 - touchscreen works with fingers and pen
 - default debian DE keyboard is *with* deadkeys
@@ -103,7 +102,7 @@ Bunsenlabs Boron comes with synaptics driver and configurations preinstalled.
 
 - read basic information about the input devices and its properties
   - `xinput --list` then select the ID for the touchpad
-  - `xinput list-props <ID>` get a (incomplete?) list of properties for `libinput`
+  - `xinput list-props <ID>` get a list of properties for `libinput`
 - remove `synaptics` driver: `sudo apt purge xserver-xorg-input-synaptics`
   - removes default `70-synaptics.conf` file automatically
   - remove any custom ones manually
@@ -144,10 +143,10 @@ Take advantage of good tools out there to finetune powersettings
   - `sudo apt install powertop tlp iotop strace`
 - take advantage of the custom config files for `tlp` in `/etc/tlp.d`
   - create custom files in there, need to end in `.conf`
-  - my files are provided
+  - my files are provided and customized to my needs and hardware
     - *01-service.conf*, *02-cpu.conf* and *03-devices.conf*
     - validate your `DISK_DEVICES` in *03-devices.conf*
-    - also i allowed usb autosuspend for the wacom touch device
+    - also I allowed usb autosuspend for the wacom touch device
 - run `tlp` with `sudo tlp start`
   - follow instructions, if something is not running
 - check various system settings and applied configuration
